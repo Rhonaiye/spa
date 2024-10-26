@@ -33,13 +33,13 @@ const insightsData = [
 ];
 
 const Insights = () => (
-  <div className='lg:px-[7vh] px-3 py-[8vh]'>
+  <div className='lg:px-[7vh] md:px-7 px-3 py-[8vh]'>
     <div className='flex flex-col lg:flex-row items-start gap-3 lg:items-center lg:justify-between'>
       <h1 className='text-2xl lg:text-3xl font-semibold'>Insights from our experts</h1>
       <button className='px-3 py-1 border-[1.2px] border-black rounded-md'>Check out the blog</button>
     </div>
 
-    <div className='grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10'>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10'>
       {insightsData.map((insight, index) => (
         <div key={index} className='h-[40vh] p-4 rounded-lg flex flex-col justify-between'>
           <div className='w-full h-2/3 bg-gray-400 rounded-md flex items-center justify-center text-gray-700'>

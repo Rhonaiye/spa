@@ -6,14 +6,15 @@ import AccordionDetails from '@mui/joy/AccordionDetails';
 import AccordionSummary, { accordionSummaryClasses } from '@mui/joy/AccordionSummary';
 import AddIcon from '@mui/icons-material/Add';
 import man from '../images/man.png';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Solutions = () => {
   return (
-    <div className='bg-[#F3F4EF] border-t-2 border-t-red rounded-[4vh] py-[10vh] lg:px-[5vh]'>
-      <div className='flex flex-col lg:flex-row gap-[10vh] px-5'>
+    <div className='bg-[#F3F4EF] border-t-2 border-t-red rounded-[4vh] py-[10vh] md:px-[3vh] lg:px-[5vh]'>
+      <div className='flex flex-col md:flex-row lg:flex-row gap-[10vh] px-5'>
         
         {/* Image Section */}
-        <div className='lg:w-1/2'>
+        <div className='lg:w-1/2 md:w-1/2'>
           <Image
             src={man}
             alt='image of a man'
@@ -22,7 +23,7 @@ const Solutions = () => {
         </div>
 
         {/* Accordion Section */}
-        <div className='side-section lg:w-1/2 lg:mt-10 flex flex-col gap-5'>
+        <div className='side-section lg:w-1/2 md:w-1/2 lg:mt-10 flex flex-col gap-5'>
            <h1 className='text-2xl font-bold max-sm:mb-8 lg:text-3xl lg:mb-10'>Spend management your business will love. Yes, really</h1>
           <Accordion
             sx={{
@@ -67,7 +68,7 @@ const Solutions = () => {
           </Accordion>
           
           <div>
-            <button className='bg-indigo-500 p-2 px-4 mt-4 rounded-md text-white'>See our solutions</button>
+            <button className='bg-indigo-500 p-2 px-4 mt-4 rounded-md text-white flex items-center gap-2'>See our solutions <FaArrowRight size={20}/> </button>
           </div>
 
         </div>

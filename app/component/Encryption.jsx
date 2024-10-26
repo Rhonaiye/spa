@@ -12,7 +12,7 @@ import {
 const Encryption = () => {
   return (
     <div>
-      <h1 className='bg-white py-8 font-semibold lg:py-6 text-3xl lg:font-medium lg:text-8xl text-center'>
+      <h1 className='bg-white py-8 font-semibold lg:py-6 text-3xl md:text-4xl lg:font-medium lg:text-8xl text-center'>
         End-to-end encryption
       </h1>
 
