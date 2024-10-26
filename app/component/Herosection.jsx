@@ -41,27 +41,23 @@ const images = [
 const Herosection = () => {
   return (
     <div className='py-[20vh] px-[2vh] lg:py-[20vh] md:px-[5vh] lg:px-[7vh] bg-white font-sans flex flex-col gap-7'>
-      <h1 className='text-4xl sm:text-5xl md:text-8xl lg:text-8xl font-bold text-neutral-800 lg:w-3/4'>
+      <h1 className='text-5xl md:text-8xl lg:text-8xl font-bold text-neutral-800 lg:w-3/4'>
         Where Finance Connects
       </h1>
 
-      <div className='text-sm sm:text-base'>
+      <div>
         <p> + Get 100% visibility on your operational spend</p>
         <p> + Spend management built for finance</p>
       </div>
 
       <div className='line border-[0.8px] border-black'></div>
 
-      <div className='flex gap-2 sm:gap-4'>
-        <button className='bg-indigo-500 p-1 sm:p-2 rounded-md text-white flex items-center gap-2 text-xs sm:text-sm'>
-          Book a demo <FaArrowRight/>  
-        </button>
-        <button className='bg-transparent border-[1px] border-black rounded-md px-2 sm:px-3 flex items-center gap-2 text-xs sm:text-sm'>
-          Tour the Spendesk app <FaArrowRight/> 
-        </button>
+      <div className='flex gap-4'>
+        <button className='bg-indigo-500 p-2 rounded-md text-white flex items-center gap-2 max-sm:text-sm'>Book a demo <FaArrowRight/>  </button>
+        <button className='bg-transparent border-[1px] border-black rounded-md px-3 flex items-center gap-2 max-sm:text-sm'>Tour the Spendesk app <FaArrowRight/> </button>
       </div>
 
-      <div className="w-full px-2 sm:px-4 md:px-6 py-4">
+      <div className="w-full px-6 py-4">
         <Carousel
           opts={{
             align: "start",
@@ -71,19 +67,18 @@ const Herosection = () => {
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {images.map((image, index) => (
-              <CarouselItem key={index} className="pl-1 sm:pl-2 md:pl-4 md:basis-1/3">
+              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/3">
                 <div className="p-1">
-                  <Card className='bg-[#191B1B] rounded-xl h-[40vh] sm:h-[35vh] md:h-[25vh] lg:h-[47vh]'> {/* Adjusted height for mobile */}
-                    <CardContent className="flex flex-col items-center justify-center p-4 sm:p-6 pb-0 text-slate-100 h-full"> {/* Adjusted padding for mobile */}
-                      <h2 className="font-semibold text-lg sm:text-xl">{image.name}</h2> 
-                      <p className="text-center font-light text-xs sm:text-sm w-[80%] md:w-[100%] ">{image.description}</p>
+                  <Card className='bg-[#191B1B] rounded-xl h-[38vh] md:h-[25vh] lg:h-[47vh]'> {/* Set height for card */}
+                    <CardContent className="flex flex-col items-center justify-center p-6 pb-0 text-slate-100 h-full"> {/* Set content to fill card */}
+                      <h2 className="font-semibold text-xl">{image.name}</h2> 
+                      <p className="text-center font-light text-sm w-[80%] md:w-[100%] ">{image.description}</p>
                       <Image 
                         src={image.src} 
                         alt={image.name} 
-                        width={280}  // reduced width for smaller screens
+                        width={320} 
                         height={50} 
-                        className="mb-2 mx-auto sm:mb-4 mt-4 sm:mt-6 max-w-full max-h-[12vh] object-contain"
-
+                        className="mb-0 mx-10 mt-6 md:mt-4" 
                       /> 
                     </CardContent>
                   </Card>
@@ -93,9 +88,9 @@ const Herosection = () => {
           </CarouselContent>
           
           {/* Navigation Buttons Container */}
-          <div className="flex justify-start gap-2 mt-4 pl-1 sm:pl-2 md:pl-4">
-            <CarouselPrevious className="static translate-y-0 w-6 sm:w-8 h-6 sm:h-8" />
-            <CarouselNext className="static translate-y-0 w-6 sm:w-8 h-6 sm:h-8" />
+          <div className="flex justify-start gap-2 mt-4 pl-2 md:pl-4">
+            <CarouselPrevious className="static translate-y-0 w-8 h-8" />
+            <CarouselNext className="static translate-y-0 w-8 h-8" />
           </div>
         </Carousel>
       </div>
