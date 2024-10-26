@@ -9,6 +9,7 @@ import Insights from "./component/Insights";
 import Footer from "./component/Footer";
 import BookDemo from "./component/BookDemo";
 import Navbar from "./component/Navbar";
+import Footer2 from "./component/Footer2";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
     <Insights/>
     <BookDemo/>
     <Footer/>
+    <Footer2/>
     
     </>
   );

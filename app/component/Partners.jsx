@@ -1,67 +1,45 @@
-import React from 'react'
+import React from 'react';
 import StarIcon from '@mui/icons-material/Star';
 
-const Partners = ()=>{
+const Partners = () => {
   return (
     <div className='background py-8 bg-black text-white'>
+      <div className="flex flex-col justify-center items-center gap-5 lg:gap-0 lg:mb-5">
+        <p className="text-center mb-4 max-sm:text-sm">
+          LOVED BY 5,000+ <span className="font-bold">FINANCE TEAMS</span>
+        </p>
 
-    <div className="flex flex-col justify-center place-items-end items-center gap-5 lg:gap-0 lg:mb-5 ">
-      <p className="text-center mb-4 max-sm:text-sm">
-        LOVED BY 5,000+ <span className="font-bold">FINANCE TEAMS</span>
-      </p>
-    
-      <div className="flex items-center gap-2 max-sm:mb-5 mb-5 lg:mb-0">
-        <span className="font-bold max-sm:text-sm">4.7/5</span>
-        <div className="flex items-center">
-          <StarIcon fontSize="small" className="text-indigo-400" />
-          <StarIcon fontSize="small" className="text-indigo-400" />
-          <StarIcon fontSize="small" className="text-indigo-400" />
-          <StarIcon fontSize="small" className="text-indigo-400" />
-          <StarIcon fontSize="small" className="text-indigo-400" />
+        <div className="flex items-center gap-2 mb-5 lg:mb-0">
+          <span className="font-bold max-sm:text-sm">4.7/5</span>
+          <div className="flex items-center">
+            <StarIcon fontSize="small" className="text-indigo-400" />
+            <StarIcon fontSize="small" className="text-indigo-400" />
+            <StarIcon fontSize="small" className="text-indigo-400" />
+            <StarIcon fontSize="small" className="text-indigo-400" />
+            <StarIcon fontSize="small" className="text-indigo-400" />
+          </div>
+        </div>
+      </div>
+
+      <div className='flex flex-col md:flex-row md:justify-center md:gap-3 lg:gap-4'>
+        {/* Left Section */}
+        <div className='flex  justify-center items-center gap-4 max-sm:mb-5'>
+          <p className='font-bold text-xl text-center'>depop</p>
+          <p className='font-bold text-xl text-blue-500 text-center'>Zapp</p>
+          <p className='font-bold text-xl font-serif text-center'>bloom & wild</p>
+          <p className='font-bold text-xl text-green-500 text-center'>Tier</p>
+        </div>
+
+        {/* Right Section */}
+        <div className='flex justify-center items-center gap-4'>
+          <p className='font-bold text-xl text-green-200 text-center'>moneybox</p>
+          <p className='font-bold text-xl text-center'>wefox</p>
+          <p className='font-bold text-xl text-center'>silverfin</p>
+          <p className='font-bold text-xl text-center'>hotjar</p>
         </div>
       </div>
     </div>
-    
+  );
+};
 
-        <div className='parent flex flex-col md:flex-row md:justify-center lg:flex-row items-center lg:justify-evenly'>
-             <div className='flex max-sm:mb-3 gap-[4vh] lg:gap-[10vh]'>
-                <div>
-                     <p className='font-bold text-xl'>depop</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl text-blue-500' >Zapp</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl font-serif'>bloom & wild</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl text-green-500'>Tier</p>
-                </div>
-             </div>
-
-             <div className='flex gap-[4vh] lg:gap-[10vh]'>
-                <div>
-                  <p className='font-bold text-xl text-green-200'>moneybox</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl'>wefox</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl'>silverfin</p>
-                </div>
-
-                <div>
-                  <p className='font-bold text-xl'>hotjar</p>
-                </div>
-             </div>
-        </div>
-    </div>
-  )
-}
-
-export default Partners
+export default Partners;

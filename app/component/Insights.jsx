@@ -2,7 +2,7 @@ import React from 'react';
 import flower from '../images/flowers.png';
 import laptop from '../images/laptop.png';
 import keyboard from '../images/keyboard.png';
-import aircraft from '../images/aircraft.png'
+import aircraft from '../images/aircraft.png';
 import Image from 'next/image';
 
 const insightsData = [
